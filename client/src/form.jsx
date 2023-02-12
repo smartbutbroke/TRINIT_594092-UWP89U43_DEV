@@ -59,7 +59,7 @@ function Create() {
           value="Submit"
         >submit</button>
         <div class="heads">
-          already have an account?<a href="/">login</a>
+          already have an account?<a href="/login">login</a>
         </div>
     </form>
   );
