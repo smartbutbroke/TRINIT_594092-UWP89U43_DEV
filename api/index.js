@@ -13,8 +13,9 @@ dotenv.config();
 // app.use(bodyParser.urlencoded({
 //     extended: true
 // }));
-mongoose.connect(process.env.mongo_link,{useNewUrlParser: true},()=>{
-    console.log("connected to database");
+mongoose.connect(process.env.mongo_link);
+mongoose.connection.once('open', () => {
+    console.log("Connected");
 });
 
 //middleware
